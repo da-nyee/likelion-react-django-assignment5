@@ -12,4 +12,8 @@ export default {
     createPost(data){
         return axios.post('/posts/', data)
     },
+
+    deletePost(id){
+        return axios.delete('/posts/' + String(id))
+    },
 }
